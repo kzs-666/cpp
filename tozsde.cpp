@@ -23,7 +23,7 @@ int main() {
 			db = 1;
 		}
 		else if (nyereseg[i] == max) {
-			nyeresegesek += ", " + ceg[i];
+			nyeresegesek += " " + ceg[i];
 			db++;
 		}
 

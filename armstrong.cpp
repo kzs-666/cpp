@@ -4,14 +4,14 @@
 using namespace std;
 
 int main() {
-	int db, t;
+	int db, t = 0;
 	string szamok[10000], megoldasok[10000];
     cin >> db;
 
 	for (int i = 0; i < db; i++) {
 		cin >> szamok[i];
 		for (int j = 0; j < szamok[i].length(); j++) {
-			t += pow(stoi(szamok[i]), szamok[i].length());
+			t += pow(stoi((szamok[i])[j]), szamok[i].length());
 		}
 		if (t == stoi(szamok[i]))
 			megoldasok[i] = "Igen";

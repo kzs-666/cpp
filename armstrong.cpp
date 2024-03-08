@@ -11,7 +11,7 @@ int main() {
 	for (int i = 0; i < db; i++) {
 		cin >> szamok[i];
 		for (int j = 0; j < szamok[i].length(); j++) {
-			t += pow(stoi((szamok[i])[j]), szamok[i].length());
+			t += pow(((szamok[i])[j] - '0'), szamok[i].length());
 		}
 		if (t == stoi(szamok[i]))
 			megoldasok[i] = "Igen";

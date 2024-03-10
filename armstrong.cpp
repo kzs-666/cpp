@@ -17,6 +17,7 @@ int main() {
 			megoldasok[i] = "Igen";
 		else
 			megoldasok[i] = "Nem";
+		t = 0;
 	}
 
 	for (int i = 0; i < db; i++) {

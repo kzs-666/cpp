@@ -5,15 +5,15 @@
 using namespace std;
 
 int main() {
-    int test, left, right, max, leftCoins[101], rightCoins[101], combinations[101];
-    cin >> test;
+	int test, left, right, max, leftCoins[101], rightCoins[101], combinations[101];
+	cin >> test;
 
-    for (int i = 0; i < test; i++) {
-        cin >> left >> right >> max;
-        combinations[i] = 0;
+	for (int i = 0; i < test; i++) {
+		cin >> left >> right >> max;
+		combinations[i] = 0;
 
-        for (int l = 0; l < left; l++) {
-            cin >> leftCoins[l];
+		for (int l = 0; l < left; l++) {
+			cin >> leftCoins[l];
         }
         for (int r = 0; r < right; r++) {
             cin >> rightCoins[r];

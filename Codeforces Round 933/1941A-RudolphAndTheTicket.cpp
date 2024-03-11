@@ -21,7 +21,7 @@ int main() {
 
         for (int l = 0; l < left; l++) {
             for (int r = 0; r < right; r++) {
-                if (leftCoins[l] + rightCoins[r] < max) {
+                if (leftCoins[l] + rightCoins[r] <= max) {
                     combinations[i]++;
                 }
             }

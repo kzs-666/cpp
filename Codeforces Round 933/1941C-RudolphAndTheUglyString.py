@@ -2,29 +2,21 @@ test = int(input())
 length = []
 strings = []
 remove = []
-m = False
-p = False
+m = "map"
+p = "pie"
 
 for i in range(0, test):
     length.append(int(input()))
     strings.append(input())
     remove.append(0)
 
-    if "map" in strings[i]:
-        m = True
-    while (m):
+    while m in strings[i]:
         remove[i] += 1
-        strings[i].replace("map", "00", 1)
-        if "map" not in strings[i]:
-            m = False
+        strings[i] = strings[i].replace("map", "", 1)
     
-    if "pie" in strings[i]:
-        p = True
-    while (p):
+    while p in strings[i]:
         remove[i] += 1
-        strings[i].replace("pie", "00", 1)
-        if "pie" not in strings[i]:
-            p = False
+        strings[i] = strings[i].replace("pie", "", 1)
 
 for i in range(0, test):
     print(remove[i])
